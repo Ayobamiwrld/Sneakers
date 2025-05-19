@@ -169,6 +169,8 @@ cartImage.addEventListener('click', () => {
       }
     }
     );
+
+    
   // delete cart item
 const deleteButton = document.querySelector('.delete');
 if (deleteButton) {
@@ -180,13 +182,15 @@ deleteButton.addEventListener('click', () => {
     value.textContent = counter;
 });
 }
+
+
 //button click effect 
 const button = document.querySelector('.add-to-cart');
 button.addEventListener('click', () => {
     button.classList.add('clicked');
     setTimeout(() => {
         button.classList.remove('clicked');
-    }, 300); // Adjust the duration as needed
+    }, 300); 
 });
 
 // scroll event listener for the top navigation bar
@@ -210,6 +214,8 @@ menuButton.addEventListener('click', () => {
 closeButtonNav.addEventListener('click', () => {
     navMenu.style.display = 'none';
 });
+
+
 // Close the dropdown when clicking outside of it
 window.addEventListener('click', (event) => {
     if (!cartImage.contains(event.target) && !dropDown.contains(event.target)) {
