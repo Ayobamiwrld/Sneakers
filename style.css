@@ -754,10 +754,6 @@ gap: 2rem;
         padding: 1rem 0rem;
     }
 .sub-cart-info{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
     gap: 1rem;
     padding: 0.7rem 1rem;
 }
@@ -768,7 +764,13 @@ gap: 2rem;
     width: 100%;;   
     color:var(--Darkgrayishblue);
 }
-
+.counter-zero{
+  
+    padding: 2.5rem 0rem;
+    font-size: 1rem;
+    color: var(--Darkgrayishblue);
+    font-weight: 600;
+ }
 .cart-info .sub-cart-info img{
     width: 3rem;
     height: 3rem;
